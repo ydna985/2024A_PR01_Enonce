@@ -42,14 +42,13 @@ def create_coins(board):
                 coins.append((row-1,column-1))
 
     # TODO: Retirer les coins de chaque "coin" du carré. Vous devez utiliser la variable 'special_coins_pos' et la fonction 'remove'.
-    #for item in special_coins_pos:
-       # if coins.count(item) != 0:
-        #    coins.remove(item)
+    for item in special_coins_pos:
+       if coins.count(item) != 0:
+            coins.remove(item)
     # TODO: Retirer les coins aux positions centrales, en utilisant la variable 'center_pos'.
     #for item in center_pos:
        # if coins.count(item) != 0:
        #     coins.remove(item)
-    print(coins)
     return coins
 
 def create_special_coins(board):
