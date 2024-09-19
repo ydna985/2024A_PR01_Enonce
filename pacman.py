@@ -47,7 +47,6 @@ class PacMan:
             direction=self.direction
             # TODO: Calculer les nouvelles coordonnées X et Y en fonction de la direction
             # Ajouter la direction à la position actuelle (self.x, self.y) pour obtenir la nouvelle position.
-            print(f"pacman position before pressing {self.x}, {self.y}")
             new_position_x=self.x+direction[0]
             new_position_y=self.y+direction[1]
             # TODO: Vérifier si la nouvelle position entre en collision avec un mur
@@ -58,7 +57,6 @@ class PacMan:
             if self.board[new_position_y][new_position_x] == 0:
                 self.x=new_position_x
                 self.y=new_position_y
-                print(f"peut avancer nouvelle position {self.x}, {self.y}")
                 # TODO: Convertir les nouvelles coordonnées de la grille en position à l'écran
                 # Utiliser une fonction comme `grid_to_screen` pour obtenir les coordonnées sur l'écran.
                 grid_to_screen([self.x, self.y], [self.size_grid, self.size_grid])
@@ -67,7 +65,6 @@ class PacMan:
                 self.rect.topleft=(self.x, self.y)
 
     def set_direction(self, direction):
-        print(f"direction pacman trying to face {direction}")
         self.direction = direction
 
     def stop(self):

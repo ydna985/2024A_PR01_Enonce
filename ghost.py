@@ -28,8 +28,6 @@ class Ghost:
 
     def move(self):
         # Si le fantôme n'est pas "mort", commencez le calcul de sa prochaine position
-        print(f"SELF POS OF THE GHOST {self.pos}")
-        print(Direction.DOWN)
         if not self.dead:
             # TODO: Calculer la prochaine position en fonction de la direction et de la vitesse
             # Utilisez `self.direction` pour déterminer la direction et `self.speed` pour le déplacement.
