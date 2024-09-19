@@ -139,7 +139,6 @@ class Game:
         for ghost in self.ghosts:
             ghost.draw()
             ghost.move()
-            #ghost.rect
         
         self.check_collision_between_ghosts_and_pacman()
 
